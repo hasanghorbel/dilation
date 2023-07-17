@@ -1,10 +1,10 @@
 # Dilation
-simple math project with pygame
-#### Install pygame with command:
+## Simple math project with pygame
+### Install pygame with command:
 ```
 pip install pygame
 ```
-#### Then run command:
+### Then run command:
 ```
 python main.py -k <factor>
 ```
