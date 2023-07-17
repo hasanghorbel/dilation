@@ -1,14 +1,17 @@
-import pygame
+import argparse
 import math
+
+import pygame
 
 pygame.init()
 
 size = width, height = (700, 700)
 screen = pygame.display.set_mode(size)
 
-
-K = 2
-
+parser = argparse.ArgumentParser(description='Scrape Google Images')
+parser.add_argument('-k', '--factor', default=2,
+                    type=str, help='search key')
+K = int(parser.parse_args().factor)
 class Point:
     def __init__(self, x:int, y:int, radius:int=10, color="red") -> None:
         self.x = x
